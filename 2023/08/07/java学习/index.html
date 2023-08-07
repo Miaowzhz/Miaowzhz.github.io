@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>多龙</title>
+        <title>java学习 | 多龙</title>
         <meta name="author" content="John Doe" />
         <meta name="description" content="一个简单的博客" />
         <meta name="keywords" content="" />
@@ -32,7 +32,9 @@
 
 
 
-<script src="/js/lib/home.js"></script>
+
+
+
 
 <link rel="stylesheet" href="/css/main.css" />
 
@@ -143,32 +145,11 @@
 
             <transition name="into">
                 <div id="main" v-show="!loading">
-                    <div id="home-head">
-    <div id="home-background" ref="homeBackground" data-images="/images/background.jpg"></div>
-    <div id="home-info" @click="homeClick">
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="info">
-            <div class="wrap">
-                <h1>多龙</h1>
-                <h3></h3>
-                <h5>一个简单的博客</h5>
-            </div>
-        </span>
+                    <div class="article">
+    <div>
+        <h1>java学习</h1>
     </div>
-</div>
-<div id="home-posts-wrap" true ref="homePostsWrap">
-    <div id="home-posts">
-        
-
-<div class="post">
-    <a href="/2023/08/07/java%E5%AD%A6%E4%B9%A0/">
-        <h2 class="post-title">java学习</h2>
-    </a>
-    <div class="category-and-date">
-        
+    <div class="info">
         <span class="date">
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
@@ -177,104 +158,31 @@
         </span>
         
         
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayAssign</span> &#123;</span><br><span class="line">    <span class="comment">// 编写一个main方法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    <span class="comment">// 基本数据类型赋值，赋值方式为值拷贝</span></span><br><span class="line">    <span class="comment">// n2的变化，不会影响n1的值</span></span><br><span class="line">    <span class="type">int</span> <span class="variable">n1</span> <span class="operator">=</span> <span class="number">10</span>;</span><br><span class="line">    <span class="type">int</span> <span class="variable">n2</span> <span class="operator">=</span> n1;</span><br><span class="line"></span><br><span class="line">    n2 = <span class="number">80</span>;</span><br><span class="line">    System.out.println(<span class="string">&quot;n1=&quot;</span> + n1); <span class="comment">// 10</span></span><br><span class="line">    System.out.println(<span class="string">&quot;n2=&quot;</span> + n2); <span class="comment">// 80</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 数组在默认情况下是引用传递，赋的值是地址，赋值方式是引用传达</span></span><br><span class="line">    <span class="comment">// arr2的变化，会影响arr1的变化</span></span><br><span class="line">    <span class="type">int</span> arr1[] = &#123; <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span> &#125;;</span><br><span class="line">    <span class="type">int</span> arr2[] = arr1; <span class="comment">// 把arr1赋给arr2</span></span><br><span class="line">    arr2[<span class="number">0</span>] = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr1.length; i++) &#123;</span><br><span class="line">        System.out.println(arr1[i]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/Java%E5%AD%A6%E4%B9%A0/" style="color: #ffa2c4">Java学习</a>
-        </span>
-        
-    </div>
-    <a href="/2023/08/07/java%E5%AD%A6%E4%B9%A0/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/07/13/%E8%80%81%E9%BC%A0%E8%B5%B0%E8%BF%B7%E5%AE%AB/">
-        <h2 class="post-title"></h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
+        <span class="tags">
             <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
+                <i class="fa-solid fa-tags fa-fw"></i>
             </span>
-            2023/7/13
+            
+            <span class="tag">
+                
+                <a href="/tags/Java%E5%AD%A6%E4%B9%A0/" style="color: #00a596">Java学习</a>
+            </span>
+            
         </span>
         
-        
     </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <hr>
-<p>title: 老鼠走迷宫<br>date: 2023-07-13 19:41:29<br>tags: Java学习<br>Java–面向对象–方法递归</p>
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-    </div>
-    <a href="/2023/07/13/%E8%80%81%E9%BC%A0%E8%B5%B0%E8%BF%B7%E5%AE%AB/" class="go-post">阅读全文</a>
-</div>
+    
+    <div class="content" v-pre>
+        <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayAssign</span> &#123;</span><br><span class="line">    <span class="comment">// 编写一个main方法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    <span class="comment">// 基本数据类型赋值，赋值方式为值拷贝</span></span><br><span class="line">    <span class="comment">// n2的变化，不会影响n1的值</span></span><br><span class="line">    <span class="type">int</span> <span class="variable">n1</span> <span class="operator">=</span> <span class="number">10</span>;</span><br><span class="line">    <span class="type">int</span> <span class="variable">n2</span> <span class="operator">=</span> n1;</span><br><span class="line"></span><br><span class="line">    n2 = <span class="number">80</span>;</span><br><span class="line">    System.out.println(<span class="string">&quot;n1=&quot;</span> + n1); <span class="comment">// 10</span></span><br><span class="line">    System.out.println(<span class="string">&quot;n2=&quot;</span> + n2); <span class="comment">// 80</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 数组在默认情况下是引用传递，赋的值是地址，赋值方式是引用传达</span></span><br><span class="line">    <span class="comment">// arr2的变化，会影响arr1的变化</span></span><br><span class="line">    <span class="type">int</span> arr1[] = &#123; <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span> &#125;;</span><br><span class="line">    <span class="type">int</span> arr2[] = arr1; <span class="comment">// 把arr1赋给arr2</span></span><br><span class="line">    arr2[<span class="number">0</span>] = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr1.length; i++) &#123;</span><br><span class="line">        System.out.println(arr1[i]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
-        <div class="page-current">
-    <div class="prev">
-        
-    </div>
-    <div class="page-index">
-        
-        <span class="current">1</span>
-        
-    </div>
-    <div class="next">
-        
-    </div>
-</div>
 
     </div>
     
-    <div id="home-card">
-        <div id="card-div">
-    <div class="card-style">
-        <div class="avatar">
-            <img src="/images/avatar.jpg" alt="avatar" />
-        </div>
-        <div class="name">John Doe</div>
-        <div class="description">
-            <p>Description<br>…</p>
-
-        </div>
-        
-        
-        <div class="friend-links">
-            
-            <div class="friend-link">
-                <a target="_blank" rel="noopener" href="https://argvchs.github.io">Argvchs</a>
-            </div>
-            
-        </div>
-        
-    </div>
-</div>
-
-    </div>
+    
+    
+    
+    
+    
     
 </div>
 
@@ -307,6 +215,12 @@
             
         </div>
         <script src="/js/main.js"></script>
+        
+        
+
+
+
+
         
     </body>
 </html>
